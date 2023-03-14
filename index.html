@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>BrainfuckE Guide</title>
+</head>
+<body>
+    <header>
+        <h1>BrainFuck</h1>
+        <h2><i>Extended</i></h2>
+    </header>
+    <div id="download">
+        <a href="Files/BrainFuckE-x64.exe" download>Download for Windows (x64)</a>
+        <a href="Files/BrainFuckE-x86.exe" download>Donwload for Windows (x86)</a>
+    </div>
+    <div id="install">
+        <h3 class="pt">Installation guide</h3>
+        <ol>
+            <li>Download .exe file</li>
+            <li>Open new text file through notepad</li>
+            <li>Write your program</li>
+            <li>Save as .bf2 file</li>
+            <li>Select your file in file explorer</li>
+            <li>Right-click on it, then select 'open with'</li>
+            <li>Select 'choose program on pc'</li>
+            <li>Select downloaded .exe file from step 1</li>
+            <li><b>Enjoy your program!</b></li>
+        </ol>
+    </div>
+    <div id="intro" class="expl">
+        <h3 class="pt c">Introduction</h3>
+        <p>This language provides you a 255 element array of 2-byte signed integers. You can access those elements,
+             change them, print them, and ask user to input them</p>
+    </div>
+    <div id="mp" class="expl">
+        <h3 class="pt r">>/< (move pointer)</h3>
+        <p>With > and < operators, you can move move pointer right or left. Starting position of pointer is 0 (first element) Pointer shows which cell you access right now.
+        For exaample, after following operators >>>>>><<><< pointer will move 2 cells right. If your po
+        inter is hogher than 254, error will be raised</p>
+    </div>
+    <div id="di" class="expl">
+        <h3 class="pt c">+/- (increment / decrement)</h3>
+        <p>Using + and -, you can increment/decrement value in current cell. If ypur value  will go out of
+            range of 2 bytes, it will return to opposite 'border' of value, creating a loop. For example, next operators
+            +>++>+++<- will set 1 cell to 1, second to 1 and 3 to 3
+        </p>
+    </div>
+    <div id="pc" class="expl">
+        <h3 class="pt l">. (char print)</h3>
+        <p>With . you can print value from current cell as a char. You will see char with ASCII code of
+            this cell. For exaample, nex code +++++++++++. will print symbol with ASCII code of 11
+        </p>
+    </div>
+    <div id="pi" class="expl">
+        <h3 class="pt c">% (number print)</h3>
+        <p>With . you can print value from current cell as a number. You will see number that was stored in cell
+            . For exaample, nex code +++++++++++. will print 11
+    </div>
+    <div id="sz" class="expl">
+        <h3 class="pt r">! (set zero)</h3>
+        <p>! operator will set all values in array to 0. For example, next code +++!++++% will print 4
+    </div>
+    <div id="ui_" class="expl">
+        <h3 class="pt c">, (user input)</h3>
+        <p>, will ask user to enter number from console. You need to enter number (not char!) you want to set and 
+            press Enter. For example, next code >,>,>,.<.<. will ask user to input 3 numbers and print
+        them in reverse order as a char</p>
+    </div>
+    <footer>
+        <h1>Enjoy coding this useful language!</h1>
+    </footer>
+</body>
+</html>
